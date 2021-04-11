@@ -65,24 +65,6 @@ function [ error_training_strong,error_test_strong,...
         error_test_strong(i) = sum(y_test~=H_test)/size(y_test,1);      % Error of the strong classifier on the test set
         fprintf('Training error of the strong classifier = %f \n',error_training_strong(i));
         fprintf('Error of the strong classifier on the test set = %f \n\n',error_test_strong(i));
-
-    %     % Plot test points for current weak classifier
-    %     figure(i)
-    %     scatter(X_test(h_test(:,i)>0,1),X_test(h_test(:,i)>0,2),'b*');
-    %     hold on
-    %     scatter(X_test(h_test(:,i)<0,1),X_test(h_test(:,i)<0,2),'r+');
-    %     hold off
-    %     str = sprintf('Test points with their associated labels at round %d',i);
-    %     title(str);
-
-    %     % Plot test points for strong classifier
-    %     figure(i)
-    %     scatter(X_test(H_test>0,1),X_test(H_test>0,2),'b*');
-    %     hold on
-    %     scatter(X_test(H_test<0,1),X_test(H_test<0,2),'r+');
-    %     hold off
-    %     str = sprintf('Test points with their associated labels at round %d',i);
-    %     title(str);
     end
 end
 
