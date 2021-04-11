@@ -1,108 +1,108 @@
 # AdaBoost
 
 ### SVM (linear kernel) - validation accuracy
->> model_try = svmtrain(y,x, '-t 0 -v 10')
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5733
-nu = 0.881591
-obj = -9765.409714, rho = -0.582717
-nSV = 9925, nBSV = 9906
-Total nSV = 9925
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5852
-nu = 0.881596
-obj = -9757.691955, rho = -0.549743
-nSV = 9927, nBSV = 9904
-Total nSV = 9927
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5787
-nu = 0.880343
-obj = -9750.337489, rho = -0.616941
-nSV = 9917, nBSV = 9892
-Total nSV = 9917
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5986
-nu = 0.879647
-obj = -9741.398223, rho = -0.596937
-nSV = 9908, nBSV = 9884
-Total nSV = 9908
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5910
-nu = 0.883974
-obj = -9788.483840, rho = -0.555871
-nSV = 9954, nBSV = 9933
-Total nSV = 9954
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5629
-nu = 0.878760
-obj = -9737.112119, rho = -0.614682
-nSV = 9901, nBSV = 9873
-Total nSV = 9901
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5952
-nu = 0.882430
-obj = -9776.390321, rho = -0.523877
-nSV = 9938, nBSV = 9917
-Total nSV = 9938
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 6240
-nu = 0.882947
-obj = -9782.679569, rho = -0.621197
-nSV = 9943, nBSV = 9920
-Total nSV = 9943
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5943
-nu = 0.883260
-obj = -9776.224615, rho = -0.661624
-nSV = 9950, nBSV = 9923
-Total nSV = 9950
-.....
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5970
-nu = 0.883553
-obj = -9785.463643, rho = -0.567659
-nSV = 9949, nBSV = 9926
-Total nSV = 9949
-Cross Validation Accuracy = 59.68%
+      >>model_try = svmtrain(y,x, '-t 0 -v 10')
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5733
+      nu = 0.881591
+      obj = -9765.409714, rho = -0.582717
+      nSV = 9925, nBSV = 9906
+      Total nSV = 9925
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5852
+      nu = 0.881596
+      obj = -9757.691955, rho = -0.549743
+      nSV = 9927, nBSV = 9904
+      Total nSV = 9927
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5787
+      nu = 0.880343
+      obj = -9750.337489, rho = -0.616941
+      nSV = 9917, nBSV = 9892
+      Total nSV = 9917
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5986
+      nu = 0.879647
+      obj = -9741.398223, rho = -0.596937
+      nSV = 9908, nBSV = 9884
+      Total nSV = 9908
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5910
+      nu = 0.883974
+      obj = -9788.483840, rho = -0.555871
+      nSV = 9954, nBSV = 9933
+      Total nSV = 9954
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5629
+      nu = 0.878760
+      obj = -9737.112119, rho = -0.614682
+      nSV = 9901, nBSV = 9873
+      Total nSV = 9901
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5952
+      nu = 0.882430
+      obj = -9776.390321, rho = -0.523877
+      nSV = 9938, nBSV = 9917
+      Total nSV = 9938
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 6240
+      nu = 0.882947
+      obj = -9782.679569, rho = -0.621197
+      nSV = 9943, nBSV = 9920
+      Total nSV = 9943
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5943
+      nu = 0.883260
+      obj = -9776.224615, rho = -0.661624
+      nSV = 9950, nBSV = 9923
+      Total nSV = 9950
+      .....
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5970
+      nu = 0.883553
+      obj = -9785.463643, rho = -0.567659
+      nSV = 9949, nBSV = 9926
+      Total nSV = 9949
+      Cross Validation Accuracy = 59.68%
 
-model_try =
+      model_try =
 
-   59.6800
+         59.6800
 
 ### SVM (polynomial kernel) - validation accuracy
 
