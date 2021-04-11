@@ -106,320 +106,319 @@
 
 ### SVM (polynomial kernel) - validation accuracy
 
->> model_try_poly = svmtrain(y,x, '-t 1 -d 5 -v 10')
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-.....
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 5625
-nu = 1.000000
-obj = -11250.000000, rho = -0.000000
-nSV = 11250, nBSV = 11250
-Total nSV = 11250
-Cross Validation Accuracy = 50.016%
+      >> model_try_poly = svmtrain(y,x, '-t 1 -d 5 -v 10')
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      .....
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 5625
+      nu = 1.000000
+      obj = -11250.000000, rho = -0.000000
+      nSV = 11250, nBSV = 11250
+      Total nSV = 11250
+      Cross Validation Accuracy = 50.016%
 
-model_try_poly =
+      model_try_poly =
 
-   50.0160
+         50.0160
 
+### preparation for evaluating the accuracy
  
->> model_all_linear = svmtrain(y,x,'-t 0')
-......
-WARNING: using -h 0 may be faster
-*.
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 6540
-nu = 0.880334
-obj = -10836.648029, rho = -0.572751
-nSV = 11019, nBSV = 10990
-Total nSV = 11019
+      >> model_all_linear = svmtrain(y,x,'-t 0')
+      ......
+      WARNING: using -h 0 may be faster
+      *.
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 6540
+      nu = 0.880334
+      obj = -10836.648029, rho = -0.572751
+      nSV = 11019, nBSV = 10990
+      Total nSV = 11019
 
-model_all_linear = 
+      model_all_linear = 
 
-  struct with fields:
+        struct with fields:
 
-    Parameters: [5×1 double]
-      nr_class: 2
-       totalSV: 11019
-           rho: -0.5728
-         Label: [2×1 double]
-    sv_indices: [11019×1 double]
-         ProbA: []
-         ProbB: []
-           nSV: [2×1 double]
-       sv_coef: [11019×1 double]
-           SVs: [11019×64 double]
+          Parameters: [5×1 double]
+            nr_class: 2
+             totalSV: 11019
+                 rho: -0.5728
+               Label: [2×1 double]
+          sv_indices: [11019×1 double]
+               ProbA: []
+               ProbB: []
+                 nSV: [2×1 double]
+             sv_coef: [11019×1 double]
+                 SVs: [11019×64 double]
 
->> model_all_poly = svmtrain(y,x,'-t 1 -d 5')
-......
-WARNING: using -h 0 may be faster
-*
-optimization finished, #iter = 6250
-nu = 1.000000
-obj = -12500.000000, rho = -0.000000
-nSV = 12500, nBSV = 12500
-Total nSV = 12500
+      >> model_all_poly = svmtrain(y,x,'-t 1 -d 5')
+      ......
+      WARNING: using -h 0 may be faster
+      *
+      optimization finished, #iter = 6250
+      nu = 1.000000
+      obj = -12500.000000, rho = -0.000000
+      nSV = 12500, nBSV = 12500
+      Total nSV = 12500
 
-model_all_poly = 
+      model_all_poly = 
 
-  struct with fields:
+        struct with fields:
 
-    Parameters: [5×1 double]
-      nr_class: 2
-       totalSV: 12500
-           rho: -6.2973e-09
-         Label: [2×1 double]
-    sv_indices: [12500×1 double]
-         ProbA: []
-         ProbB: []
-           nSV: [2×1 double]
-       sv_coef: [12500×1 double]
-           SVs: [12500×64 double]
+          Parameters: [5×1 double]
+            nr_class: 2
+             totalSV: 12500
+                 rho: -6.2973e-09
+               Label: [2×1 double]
+          sv_indices: [12500×1 double]
+               ProbA: []
+               ProbB: []
+                 nSV: [2×1 double]
+             sv_coef: [12500×1 double]
+                 SVs: [12500×64 double]
 
 ### linear kernal testing accuracy
->> [accuracy] = svmpredict(y_t, x_t, model_all_linear);
-Accuracy = 59.2% (7400/12500) (classification)
+      >> [accuracy] = svmpredict(y_t, x_t, model_all_linear);
+      Accuracy = 59.2% (7400/12500) (classification)
 
 ### linear kernal training accuracy
->> [accuracy] = svmpredict(y, x, model_all_linear);
-Accuracy = 60.12% (7515/12500) (classification)
+      >> [accuracy] = svmpredict(y, x, model_all_linear);
+      Accuracy = 60.12% (7515/12500) (classification)
 
 ### polynomial kernal testing accuracy
->> [accuracy] = svmpredict(y_t, x_t, model_all_poly);
-Accuracy = 50.048% (6256/12500) (classification)
+      >> [accuracy] = svmpredict(y_t, x_t, model_all_poly);
+      Accuracy = 50.048% (6256/12500) (classification)
 
 ### polynomial kernal training accuracy
->> [accuracy] = svmpredict(y, x, model_all_poly);
-Accuracy = 50.024% (6253/12500) (classification)
->> svm_model_matlab
-Unrecognized function or variable 'svm_model_matlab'.
+      >> [accuracy] = svmpredict(y, x, model_all_poly);
+      Accuracy = 50.024% (6253/12500) (classification)
+
  
 ### Boosting SVM for 10 iterations
  
->> Adaboost
-     1
+      >> Adaboost
+           1
 
-Training error of the strong classifier = 0.420880 
-Error of the strong classifier on the test set = 0.423440 
+      Training error of the strong classifier = 0.420880 
+      Error of the strong classifier on the test set = 0.423440 
 
-     2
+           2
 
-Training error of the strong classifier = 0.420880 
-Error of the strong classifier on the test set = 0.423440 
+      Training error of the strong classifier = 0.420880 
+      Error of the strong classifier on the test set = 0.423440 
 
-     3
+           3
 
-Training error of the strong classifier = 0.392240 
-Error of the strong classifier on the test set = 0.404640 
+      Training error of the strong classifier = 0.392240 
+      Error of the strong classifier on the test set = 0.404640 
 
-     4
+           4
 
-Training error of the strong classifier = 0.391200 
-Error of the strong classifier on the test set = 0.400560 
+      Training error of the strong classifier = 0.391200 
+      Error of the strong classifier on the test set = 0.400560 
 
-     5
+           5
 
-Training error of the strong classifier = 0.385040 
-Error of the strong classifier on the test set = 0.391440 
+      Training error of the strong classifier = 0.385040 
+      Error of the strong classifier on the test set = 0.391440 
 
-     6
+           6
 
-Training error of the strong classifier = 0.387920 
-Error of the strong classifier on the test set = 0.394960 
+      Training error of the strong classifier = 0.387920 
+      Error of the strong classifier on the test set = 0.394960 
 
-     7
+           7
 
-Training error of the strong classifier = 0.378480 
-Error of the strong classifier on the test set = 0.385120 
+      Training error of the strong classifier = 0.378480 
+      Error of the strong classifier on the test set = 0.385120 
 
-     8
+           8
 
-Training error of the strong classifier = 0.377920 
-Error of the strong classifier on the test set = 0.384400 
+      Training error of the strong classifier = 0.377920 
+      Error of the strong classifier on the test set = 0.384400 
 
-     9
+           9
 
-Training error of the strong classifier = 0.373040 
-Error of the strong classifier on the test set = 0.377680 
+      Training error of the strong classifier = 0.373040 
+      Error of the strong classifier on the test set = 0.377680 
 
-    10
+          10
 
-Training error of the strong classifier = 0.371520 
-Error of the strong classifier on the test set = 0.380000 
+      Training error of the strong classifier = 0.371520 
+      Error of the strong classifier on the test set = 0.380000 
 
 
 ### Boosting SVM for 20 iterations
->> Adaboost
-     1
+      >> Adaboost
+           1
 
-Training error of the strong classifier = 0.420880 
-Error of the strong classifier on the test set = 0.423440 
+      Training error of the strong classifier = 0.420880 
+      Error of the strong classifier on the test set = 0.423440 
 
-     2
+           2
 
-Training error of the strong classifier = 0.420880 
-Error of the strong classifier on the test set = 0.423440 
+      Training error of the strong classifier = 0.420880 
+      Error of the strong classifier on the test set = 0.423440 
 
-     3
+           3
 
-Training error of the strong classifier = 0.392240 
-Error of the strong classifier on the test set = 0.404640 
+      Training error of the strong classifier = 0.392240 
+      Error of the strong classifier on the test set = 0.404640 
 
-     4
+           4
 
-Training error of the strong classifier = 0.391200 
-Error of the strong classifier on the test set = 0.400560 
+      Training error of the strong classifier = 0.391200 
+      Error of the strong classifier on the test set = 0.400560 
 
-     5
+           5
 
-Training error of the strong classifier = 0.385040 
-Error of the strong classifier on the test set = 0.391440 
+      Training error of the strong classifier = 0.385040 
+      Error of the strong classifier on the test set = 0.391440 
 
-     6
+           6
 
-Training error of the strong classifier = 0.387920 
-Error of the strong classifier on the test set = 0.394960 
+      Training error of the strong classifier = 0.387920 
+      Error of the strong classifier on the test set = 0.394960 
 
-     7
+           7
 
-Training error of the strong classifier = 0.378480 
-Error of the strong classifier on the test set = 0.385120 
+      Training error of the strong classifier = 0.378480 
+      Error of the strong classifier on the test set = 0.385120 
 
-     8
+           8
 
-Training error of the strong classifier = 0.377920 
-Error of the strong classifier on the test set = 0.384400 
+      Training error of the strong classifier = 0.377920 
+      Error of the strong classifier on the test set = 0.384400 
 
-     9
+           9
 
-Training error of the strong classifier = 0.373040 
-Error of the strong classifier on the test set = 0.377680 
+      Training error of the strong classifier = 0.373040 
+      Error of the strong classifier on the test set = 0.377680 
 
-    10
+          10
 
-Training error of the strong classifier = 0.371520 
-Error of the strong classifier on the test set = 0.380000 
+      Training error of the strong classifier = 0.371520 
+      Error of the strong classifier on the test set = 0.380000 
 
-    11
+          11
 
-Training error of the strong classifier = 0.367840 
-Error of the strong classifier on the test set = 0.380480 
+      Training error of the strong classifier = 0.367840 
+      Error of the strong classifier on the test set = 0.380480 
 
-    12
+          12
 
-Training error of the strong classifier = 0.369520 
-Error of the strong classifier on the test set = 0.379520 
+      Training error of the strong classifier = 0.369520 
+      Error of the strong classifier on the test set = 0.379520 
 
-    13
+          13
 
-Training error of the strong classifier = 0.366800 
-Error of the strong classifier on the test set = 0.379120 
+      Training error of the strong classifier = 0.366800 
+      Error of the strong classifier on the test set = 0.379120 
 
-    14
+          14
 
-Training error of the strong classifier = 0.368240 
-Error of the strong classifier on the test set = 0.378960 
+      Training error of the strong classifier = 0.368240 
+      Error of the strong classifier on the test set = 0.378960 
 
-    15
+          15
 
-Training error of the strong classifier = 0.367360 
-Error of the strong classifier on the test set = 0.374480 
+      Training error of the strong classifier = 0.367360 
+      Error of the strong classifier on the test set = 0.374480 
 
-    16
+          16
 
-Training error of the strong classifier = 0.364960 
-Error of the strong classifier on the test set = 0.370640 
+      Training error of the strong classifier = 0.364960 
+      Error of the strong classifier on the test set = 0.370640 
 
-    17
+          17
 
-Training error of the strong classifier = 0.364960 
-Error of the strong classifier on the test set = 0.370800 
+      Training error of the strong classifier = 0.364960 
+      Error of the strong classifier on the test set = 0.370800 
 
-    18
+          18
 
-Training error of the strong classifier = 0.363120 
-Error of the strong classifier on the test set = 0.373760 
+      Training error of the strong classifier = 0.363120 
+      Error of the strong classifier on the test set = 0.373760 
 
-    19
+          19
 
-Training error of the strong classifier = 0.363680 
-Error of the strong classifier on the test set = 0.371760 
+      Training error of the strong classifier = 0.363680 
+      Error of the strong classifier on the test set = 0.371760 
 
-    20
+          20
 
-Training error of the strong classifier = 0.366160 
-Error of the strong classifier on the test set = 0.372880 
+      Training error of the strong classifier = 0.366160 
+      Error of the strong classifier on the test set = 0.372880 
 
->> 
